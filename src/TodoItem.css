@@ -1,0 +1,44 @@
+.todo-item {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  justify-content: flex-start; /* Выравнивание по верхнему краю */
+  margin-bottom: 10px;
+  padding: 10px; /* Отступ внутри элемента */
+  border: 1px solid #ddd; /* Граница для улучшения отображения */
+  border-radius: 5px; /* Закругленные углы */
+  overflow: hidden; /* Скрытие переполнения */
+}
+
+.task-details {
+  flex-grow: 1; /* Позволяет этому элементу занимать оставшееся пространство */
+  margin-bottom: 5px; /* Отступ снизу для деталей задачи */
+  padding-left: 5px; /* Отступ слева для текста */
+  padding-right: 5px; /* Отступ справа для текста */
+}
+
+.task-title {
+  display: block; /* Отображение в виде блочного элемента */
+  margin-bottom: 5px; /* Отступ снизу для заголовка */
+  overflow-wrap: break-word; /* Перенос длинных слов на новую строку */
+  word-wrap: break-word; /* Альтернатива для переноса слов */
+  hyphens: auto; /* Автоматические переносы слов */
+  white-space: normal; /* Перенос текста на новую строку */
+}
+
+.task-description {
+  width: 100%; /* Занять всю ширину родителя */
+  resize: none; /* Запрет на изменение размера текстового поля */
+  overflow-wrap: break-word; /* Перенос слов, если они не помещаются */
+  margin-top: 5px; /* Отступ сверху для описания */
+  margin-bottom: 5px; /* Отступ снизу для описания */
+  white-space: normal; /* Перенос текста на новую строку */
+}
+
+.todo-checkbox-container {
+  margin-top: 5px; /* Отступ сверху для чекбокса */
+}
+
+.delete-button {
+  margin-top: 3px; /* Уменьшенный отступ сверху для кнопки "Удалить" */
+  align-self: flex-end; /* Выравнивание кнопки по правому краю */
+}
